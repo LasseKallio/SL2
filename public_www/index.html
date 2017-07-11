@@ -12,12 +12,16 @@
 	<body ng-controller="IndexController">
 		<h1>Shoppinglist Application</h1>
 		<a href="#/loginpage">Login</a>
-		<a href="#/shoppinglist" ng-show="isLogged()">The List</a>
-		<a href="#/additem" ng-show="isLogged()">Add Item</a>	
-		<a href="#/finditem" ng-show="isLogged()">Find Item</a>
+		<a href="#/shoppinglist">The List</a> 
+		<a href="#/additem">Add Item</a>	
+		<a href="#/finditem">Find Item</a>
 		<hr>
 		<div ng-view>
 
 		</div>
 	</body>
 </html>
+
+<!-- <a href="#/shoppinglist" ng-show="isLogged()">The List</a> 
+		<a href="#/additem" ng-show="isLogged()">Add Item</a>	
+		<a href="#/finditem" ng-show="isLogged()">Find Item</a> -->

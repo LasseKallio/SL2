@@ -9,7 +9,8 @@ var config = require("./config");
 var jwt = require("jsonwebtoken");
 var apiRouter = express.Router();
 
-mongoose.connect(config.database);
+//mongoose.connect(config.database);
+mongoose.connect(config.database, { useMongoClient: true });
 
 app.set("mySecret",config.secret);
 app.use(express.static(path.join(__dirname,"public_www")));

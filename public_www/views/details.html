@@ -1,0 +1,21 @@
+<div ng-controller="ItemController">
+	<form ng-submit="search()">
+		Search for ID:
+		<input type="number" ng-model="id"></input>
+		<br>
+		<input type="submit" value="Search"></input>
+	</form>
+	<hr>
+	<p>
+	Product:{{details.name}}
+	</p>
+	<p>
+	Count:{{details.count}}
+	</p>
+	<p>
+	Price:{{details.price}}
+	</p>
+	<p>
+	ID:{{details.id}}
+	</p>
+</div>

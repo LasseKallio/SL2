@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="ShoppingListApp">
+	<head>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>  
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-resource.min.js"></script>		
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+		<script src="./scripts/main.js"></script>		
+		<script src="./scripts/controllers/controllers.js"></script>	
+		<script src="./scripts/factories/factories.js"></script>
+		</head>
+	<body ng-controller="IndexController">
+		<h1>Shoppinglist Application</h1>
+		<a href="#/loginpage">Login</a>
+		<a href="#/shoppinglist" ng-show="isLogged()">The List</a>
+		<a href="#/additem" ng-show="isLogged()">Add Item</a>	
+		<a href="#/finditem" ng-show="isLogged()">Find Item</a>
+		<hr>
+		<div ng-view>
+
+		</div>
+	</body>
+</html>

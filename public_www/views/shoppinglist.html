@@ -1,0 +1,32 @@
+<div ng-controller="ListController">
+	<table>
+		<tr>
+			<th>
+			ID
+			</th>
+			<th>
+			Count
+			</th>
+			<th>
+			Name
+			</th>
+			<th>
+			Price
+			</th>
+		</tr>
+		<tr ng-repeat-start="item in shoppinglist">
+			<th>
+			{{item.id}}
+			</th>
+			<th>
+			{{item.count}}
+			</th>
+			<th>
+			{{item.name}}
+			</th>
+			<th>
+			{{item.price}}
+			</th>
+		<tr ng-repeat-end>
+	</table>
+</div>
